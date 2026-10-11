@@ -46,7 +46,7 @@ with st.sidebar.expander("➕ Add New Wallet", expanded=True):
     w_name = st.text_input("Wallet Name / Level", "Level 1 Main")
     w_platform = st.selectbox("Platform", ["Lighter", "Arcus"])
     w_address = st.text_input("Wallet Address (0x...)")
-    initial_eq_input = st.number_input("Current/Initial Equity ($)", min_value=0.0, value=1000.0, step50.0)
+    initial_eq_input = st.number_input("Current/Initial Equity ($)", min_value=0.0, value=1000.0, step=50.0)
     
     if st.button("Add Wallet"):
         if w_address:
